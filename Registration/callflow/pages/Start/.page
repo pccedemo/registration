@@ -7,11 +7,6 @@
 </element>
 <element height="46" id="Element@794588672:1550266406272" name="CVP Subdialog Start_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="172" x="201" y="120">
 <exit_states>
-<exit_state name="done" target="Element@817100252:1550282970289"/>
-</exit_states>
-</element>
-<element height="46" id="Element@817100252:1550282970289" name="set env" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="114" x="230" y="216">
-<exit_states>
 <exit_state name="done" target="Element@874007537:1550292902341"/>
 </exit_states>
 </element>
