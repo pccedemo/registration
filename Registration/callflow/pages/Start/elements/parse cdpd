@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@874007537:1550292902341" name="parse cdpd" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Copy_of_has userID" default_exit_state="no PQ ID">
+        <exit_state name="no demo config" conjugate="and">
+            <string operator="contains">
+                <data>
+                    <session name="cdpd" />
+                </data>
+                <constant_string value="Error - demo config not found" />
+            </string>
+        </exit_state>
+        <exit_state name="no contact" conjugate="and">
+            <string operator="contains">
+                <data>
+                    <session name="cdpd" />
+                </data>
+                <constant_string value="Error - contact not found" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

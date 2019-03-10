@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@900745922:1550295123736" name="Register" version="6.0.1">
+<element height="46" id="Element@1224483351:1550295123736" name="Register" type="Page Entry" width="92" x="300" y="30">
+<exit_states>
+<exit_state name="next" target="Element@18710625:1550295169877"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1785837616:1550295169877" name="requalify" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="96" x="292" y="480">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="46" id="Element@18710625:1550295169877" name="get user id" src="com.audium.server.voiceElement.digit.MBasicDigitWithConfirm" type="Voice Element" width="105" x="293" y="132">
+<exit_states>
+<exit_state name="done" target="Element@936861913:1550295169877"/>
+<exit_state name="max_nomatch" target="Element@2057815318:1550295294081">
+<bendpoint>
+<dim1 x="-178" y="-54"/>
+<dim2 x="54" y="-54"/>
+</bendpoint>
+</exit_state>
+<exit_state name="max_noinput" target="Element@2057815318:1550295294081"/>
+<exit_state name="max_disconfirmed" target="Element@2057815318:1550295294081">
+<bendpoint>
+<dim1 x="-169" y="53"/>
+<dim2 x="63" y="53"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@1341361640:1550295169877" name="register succeeded" type="Decision" width="148" x="266" y="312">
+<exit_states>
+<exit_state name="success" target="Element@488071987:1550295169877"/>
+<exit_state name="fail" target="Element@1052340931:1550295169877"/>
+</exit_states>
+</element>
+<element height="46" id="Element@936861913:1550295169877" name="register phone to user ID" src="com.audium.server.action.rest.client.RestClientAction" type="Action Element" width="179" x="250" y="228">
+<exit_states>
+<exit_state name="done" target="Element@1341361640:1550295169877"/>
+<exit_state name="Java Exception-any" target="Element@1052340931:1550295169877"/>
+</exit_states>
+</element>
+<element height="46" id="Element@488071987:1550295169877" name="done" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="77" x="301" y="396">
+<exit_states>
+<exit_state name="done" target="Element@1785837616:1550295169877"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1052340931:1550295169877" name="registration error" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="138" x="550" y="228">
+<exit_states>
+<exit_state name="done" target="Element@1908862937:1550295183127"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1908862937:1550295183127" name="End" type="Page Connector" width="70" x="584" y="336">
+<page_connector target="Element@398625856:1550293298170">End<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@2057815318:1550295294081" name="NINM" type="Page Connector" width="82" x="72" y="132">
+<page_connector target="Element@436698276:1550295196549">NINM<config/>
+</page_connector>
+</element>
+</page>

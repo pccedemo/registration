@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@1474862109:1550293448826" name="No Demo Config" version="6.0.1">
+<config>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[hello
+<break time="100ms" />
+it seems you don't have this demo phone number configured yet
+<break time="100ms" />
+please run the provisioning tool or configure your demo selector
+<break time="50ms" />
+for DNIS {CallData.DNIS}
+<break time="50ms" />
+ in the d Cloud PCCE Toolbox with your precision queue ID
+<break time="50ms" />
+ and then call back
+<break time="100ms" />
+Goodbye]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

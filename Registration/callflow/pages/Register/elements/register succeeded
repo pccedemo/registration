@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1341361640:1550295169877" name="register succeeded" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Decision_01" default_exit_state="fail">
+        <exit_state name="success" conjugate="and">
+            <number operator="equal">
+                <data>
+                    <element name="register phone to user ID" variable="status_code" />
+                </data>
+                <constant_number value="201" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

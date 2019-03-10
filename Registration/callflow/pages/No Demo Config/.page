@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@261886879:1550293274764" name="No Demo Config" version="6.0.1">
+<element height="46" id="Element@1338782650:1550293274764" name="No Demo Config" type="Page Entry" width="140" x="300" y="30">
+<exit_states>
+<exit_state name="next" target="Element@1474862109:1550293448826"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1474862109:1550293448826" name="No Demo Config" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="184" x="278" y="120">
+<exit_states>
+<exit_state name="done" target="Element@2004751129:1550293460201"/>
+</exit_states>
+</element>
+<element height="46" id="Element@2004751129:1550293460201" name="End" type="Page Connector" width="70" x="335" y="216">
+<page_connector target="Element@398625856:1550293298170">End<config/>
+</page_connector>
+</element>
+</page>

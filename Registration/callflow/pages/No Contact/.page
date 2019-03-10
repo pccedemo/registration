@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1857035288:1550293491998" name="No Contact" version="6.0.1">
+<element height="46" id="Element@1812243565:1550293491998" name="No Contact" type="Page Entry" width="111" x="330" y="24">
+<exit_states>
+<exit_state name="next" target="Element@2087190269:1550293523530"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1484498292:1550293523530" name="will not register" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="131" x="528" y="204">
+<exit_states>
+<exit_state name="done" target="Element@141124411:1550295238627"/>
+</exit_states>
+</element>
+<element height="46" id="Element@971735039:1550293523530" name="want to register" src="com.audium.server.voiceElement.menu.MYesNoMenu" type="Voice Element" width="142" x="315" y="204">
+<exit_states>
+<exit_state name="yes" target="Element@1003529123:1550295137721"/>
+<exit_state name="no" target="Element@1484498292:1550293523530"/>
+<exit_state name="max_nomatch" target="Element@747925666:1550295250252">
+<bendpoint>
+<dim1 x="-140" y="-38"/>
+<dim2 x="97" y="-38"/>
+</bendpoint>
+</exit_state>
+<exit_state name="max_noinput" target="Element@747925666:1550295250252">
+<bendpoint>
+<dim1 x="-145" y="48"/>
+<dim2 x="92" y="48"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@2087190269:1550293523530" name="no userId" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="148" x="312" y="108">
+<exit_states>
+<exit_state name="done" target="Element@971735039:1550293523530"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1003529123:1550295137721" name="Register" type="Page Connector" width="92" x="340" y="312">
+<page_connector target="Element@1224483351:1550295123736">Register<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@141124411:1550295238627" name="End" type="Page Connector" width="70" x="559" y="312">
+<page_connector target="Element@398625856:1550293298170">End<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@747925666:1550295250252" name="NINM" type="Page Connector" width="82" x="108" y="204">
+<page_connector target="Element@436698276:1550295196549">NINM<config/>
+</page_connector>
+</element>
+</page>

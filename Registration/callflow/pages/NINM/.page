@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1554514354:1550295196549" name="NINM" version="6.0.1">
+<element height="46" id="Element@436698276:1550295196549" name="NINM" type="Page Entry" width="82" x="300" y="30">
+<exit_states>
+<exit_state name="next" target="Element@1279830586:1550295236221"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1279830586:1550295236221" name="cannot confirm input" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="163" x="259" y="132">
+<exit_states>
+<exit_state name="done" target="Element@916450550:1550295236221"/>
+</exit_states>
+</element>
+<element height="46" id="Element@916450550:1550295236221" name="End" type="Page Connector" width="70" x="306" y="240">
+<page_connector target="Element@398625856:1550293298170">End<config/>
+</page_connector>
+</element>
+</page>
